@@ -1,0 +1,95 @@
+body {
+    font-family: 'League Spartan', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    color: oklch(0.808 0.114 19.571);
+}
+
+.home {  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin: 20px;
+}
+
+.home div {
+    margin: 20px;
+}
+
+.heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+h2 {
+    font-size: 24px;
+    color: #555;
+}
+
+.home img {
+    width: 250px; 
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.About {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: left;
+}
+
+ 
+.About h2 {
+    color: #333;
+}
+
+.About p {
+    font-size: 18px;
+    color: #555;
+}
+
+.About ul {
+    list-style: none;
+    padding: 0;
+}
+
+.About ul li {
+    font-size: 16px;
+    color: #444;
+    padding: 5px 0;
+}

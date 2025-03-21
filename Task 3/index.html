@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script><link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="bg-pink-200 text-gray-800 py-2 fixed w-full top-0 shadow-lg z-50">
+        <div class="flex justify-center space-x-6 text-sm font-semibold">
+            <a href="../Mainindex.html" class="hover:text-pink-600">Portfolio</a>
+            <a href="../Task 1/index.html" class="hover:text-pink-600">Project 1</a>
+            <a href="../Task 2/index.html" class="hover:text-pink-600">Project 2</a>
+            <a href="../Task 3/index.html" class="hover:text-pink-600">Project 3</a>
+            <a href="../Task 4/index.html" class="hover:text-pink-600">Project 4</a>
+            <a href="../Task 5/index.html" class="hover:text-pink-600">Project 5</a>
+            <a href="../Task 6/index.html" class="hover:text-pink-600">Project 6</a>
+            <a href="../Task 7/index.html" class="hover:text-pink-600">Project 7</a>
+            <a href="../Task 8/index.html" class="hover:text-pink-600">Project 8</a>
+            <a href="../Task 9/index.html" class="hover:text-pink-600">Project 9</a>
+            <a href="../Task 10/index.html" class="hover:text-pink-600">Project 10</a>
+        </div>
+    </nav>
+    <div class="bg-white p-5 rounded-lg shadow-md w-[300px] box-border">
+
+        <h1><strong>Register</strong></h1>
+        <form id="registration" action="#">
+            <label for="fname">Full Name:</label>
+            <input type="text" id="fname" name="fname" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="number">Phone Number:</label>
+            <input type="tel" id="number" name="number" pattern="[0-9]{10}" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="8" required>
+
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="password2" minlength="8" required>
+
+
+            <!-- CAPTCHA Section -->
+            <div class="captcha">
+                <div id="wrapper">
+                    <div class="wrapper-captcha">
+                        <div id="captcha"></div>
+                        <button type="button" onclick="generateCaptcha()">🔄</button>
+                    </div>
+                    <div class="wrapper-check">
+                        <input type="text" id="userInput" placeholder="Enter CAPTCHA">
+                        <button type="button" onclick="validateCaptcha()">Check</button>
+                    </div>
+                    <p id="result"></p>
+                </div>
+            </div>
+
+            <button type="submit">Submit</button>
+
+            <p id="error-message" style="color: red; display: none;"></p>
+            <p id="successMessage" style="color: green; display: none;">Registration Complete!</p>
+        </form>
+    </div>
+</body>
+</html>

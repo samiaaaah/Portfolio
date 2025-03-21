@@ -1,0 +1,12 @@
+*{
+    margin:0%;
+    padding:0;
+}
+/*  */
+
+#colorpicker{
+    padding: 2px;
+    height: 70px;
+    margin: 20px;
+    width: 70px;
+}

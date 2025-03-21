@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: bisque;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+    height: 100vh;
+    align-items: center;
+}
+
+.traffic-light{
+    margin: 30px;
+    height: 320px;
+    width: 120px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    border: 10px solid #848484;
+}
+.light{
+    width: 80px;
+    height: 80px;
+    background-color: #333;
+    border-radius: 50%;
+    margin:10px 0;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.stand{
+    width:20px;
+    height:280px;
+    background-color: #333;
+    position: absolute;
+    top: 100%;
+    left:50%;
+    transform:translate(-50%);
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    z-index: -1;
+}
+.stand-base{
+ width: 150px;
+ height:25px;
+ top:188%;
+ background:#333;
+ position: absolute;
+
+}
+.red-light{
+    background-color: red;
+}
+.yellow-light{
+    background-color: yellow;
+
+}
+.green-light{
+    background-color: green;
+
+}
+.orange-light{
+    background-color: orange;
+}
